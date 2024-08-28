@@ -1,20 +1,20 @@
 
 # para rodar local
 
-- ionic serve
+ionic serve
 
 # para rodar no celular simulado
 
 https://capacitorjs.com/docs/basics/workflow#sync-your-project 
 
 
-- npm run build
+npm run build
 
 - montar um celular simulado no androind studio
 
-- npx cap sync
+npx cap sync
 
-- npx cap open android
+npx cap open android
 
 colocar o filtro io.ionic.starter no logcat para ver as mensagem que iriam para o console
 
@@ -32,8 +32,9 @@ https://developer.android.com/tools/adb#wireless-adb-android-11
 
 ## no computador 
 - tools > sdk manager
-- cd C:\Users\stefanini\AppData\Local\Android\Sdk
-- cd plataform-tools
+
+cd C:\Users\stefanini\AppData\Local\Android\Sdk
+cd plataform-tools
 
 pode também colocar o path acima nas variaveis de ambiente, ou chamar o adb abaixo com ./adb
 
