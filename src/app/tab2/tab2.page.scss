@@ -1,0 +1,17 @@
+.level-bubble-container {
+    width: 100px; /* Largura do círculo */
+    height: 200px; /* Altura do círculo */
+    border: 5px solid #ccc; /* Bordas do círculo */
+    border-radius: 50%; /* Faz o círculo */
+    position: relative;
+    overflow: hidden;
+    background-color: #e0e0e0; /* Cor de fundo do círculo */
+  }
+  
+  .level-bubble {
+    position: absolute;
+    bottom: 0; /* Posiciona o líquido na parte inferior */
+    width: 100%;
+    background-color: #76c7c0; /* Cor do líquido */
+  }
+  
