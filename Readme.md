@@ -16,12 +16,14 @@ https://capacitorjs.com/docs/basics/workflow#sync-your-project
 
 - npx cap open android
 
+colocar o filtro io.ionic.starter no logcat para ver as mensagem que iriam para o console
+
 # para rodar no celular fisico
 
 
 https://developer.android.com/tools/adb#wireless-adb-android-11
 
- no celular
+ ## no celular
 
 - ativar modo de desenvolvedor 
 - sobre o telefone  >  informacoes de software > numero de compilacao 
@@ -33,14 +35,14 @@ https://developer.android.com/tools/adb#wireless-adb-android-11
 - cd C:\Users\stefanini\AppData\Local\Android\Sdk
 - cd plataform-tools
 
+pode também colocar o path acima nas variaveis de ambiente, ou chamar o adb abaixo com ./adb
+
 
 
 dado oq aparecer nas opcoes de depuracao por wifi das opcoes de desenvolvedor
-- ./adb pair [ip]:[porta] 
-( a porta muda toda vez na modal de conectar)
+- adb pair [ip]:[porta] ( a porta muda toda vez na modal de conectar)
 
-- ./adb connect [ip]:[porta]   
-( a porta é a da tela de depuracao por wifi )
+- adb connect [ip]:[porta] ( a porta é a da tela de depuracao por wifi )
 
 
 

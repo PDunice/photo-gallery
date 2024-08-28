@@ -1,4 +1,8 @@
 import { Component } from '@angular/core';
+import { DeviceMotion, DeviceMotionAccelerationData,  } from '@ionic-native/device-motion/ngx';
+
+
+
 
 @Component({
   selector: 'app-tab2',
@@ -7,6 +11,23 @@ import { Component } from '@angular/core';
 })
 export class Tab2Page {
 
-  constructor() {}
+  constructor(private deviceMotion: DeviceMotion) {}
 
+  clicado(){
+    console.log("clicado o botao");
+
+    this.startTracking();
+  }
+
+  startTracking() {
+    console.log('startTracking');
+    
+    this.deviceMotion.watchAcceleration().subscribe((acceleration: DeviceMotionAccelerationData ) => {
+      console.log('movimentou ', JSON.stringify(acceleration) );
+    });
+  }
+  
+
+
+  
 }
