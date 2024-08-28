@@ -11,6 +11,8 @@ import { DeviceMotion, DeviceMotionAccelerationData,  } from '@ionic-native/devi
 })
 export class Tab2Page {
 
+  // public level: number = 1;
+
   constructor(private deviceMotion: DeviceMotion) {}
 
   clicado(){

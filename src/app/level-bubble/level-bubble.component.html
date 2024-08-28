@@ -1,0 +1,9 @@
+<p>Normalized X: {{ normalizedX }} %</p>
+<p>Normalized Y: {{ normalizedY }} %</p>
+<p>Normalized Z: {{ normalizedZ }} %</p>
+
+
+<div class="level-bubble-container">
+  <div class="level-bubble" [style.top.%]="normalizedX" [style.right.%]="normalizedZ"></div>
+
+</div>
