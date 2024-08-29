@@ -1,3 +1,14 @@
+# Sobre 
+
+Este repositorio é meu primeiro app ionic. 
+
+Segui o inicio do tutorial  para app ionic com framework angular no site  
+
+https://ionicframework.com/docs/angular/your-first-app
+
+Em seguida implementei um nivel de bolha usando o acelerômetro do celular presente na tab2 do app.
+
+
 # Para mostrar o device manager do android studio em uma tela menos horrivel.
 
 se tiver com o projeto aberto
@@ -32,7 +43,6 @@ colocar o filtro io.ionic.starter no logcat para ver as mensagem que iriam para 
 
 
 https://developer.android.com/tools/adb#wireless-adb-android-11
-
  ## no celular
 
 - ativar modo de desenvolvedor 
@@ -46,8 +56,7 @@ https://developer.android.com/tools/adb#wireless-adb-android-11
 cd C:\Users\stefanini\AppData\Local\Android\Sdk
 cd plataform-tools
 
-pode também colocar o path acima nas variaveis de ambiente, ou chamar o adb abaixo com ./adb
-
+Pode também colocar o path acima nas variaveis de ambiente, ou chamar o adb abaixo com ./adb
 
 
 dado oq aparecer nas opcoes de depuracao por wifi das opcoes de desenvolvedor
@@ -55,6 +64,18 @@ dado oq aparecer nas opcoes de depuracao por wifi das opcoes de desenvolvedor
 
 - adb connect [ip]:[porta] ( a porta é a da tela de depuracao por wifi )
 
+
+# APK
+
+Na pasta 
+
+android\app\build\outputs\apk\debug
+ 
+Tem um arquivo APK não assinado que pode ser instalado em celulares Android
+
+Para gerar um arquivo atualizado execute o comando no androind studio
+
+Build > Build App bundles / apk > build apk 
 
 
 
