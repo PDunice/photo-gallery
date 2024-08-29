@@ -1,18 +1,20 @@
+import { CommonModule } from '@angular/common';
 import { Component, Input, OnInit, OnDestroy } from '@angular/core';
 import { DeviceMotion, DeviceMotionAccelerationData } from '@ionic-native/device-motion/ngx';
 import { Subscription } from 'rxjs';
 
 @Component({
   standalone: true,
+  imports: [CommonModule],
   selector: 'app-level-bubble',
   templateUrl: './level-bubble.component.html',
   styleUrls: ['./level-bubble.component.scss']
 })
 export class LevelBubbleComponent implements OnInit, OnDestroy {
   // @Input() level: number = 0; // Nível da bolha
-  normalizedX: number = 0; // Normalização do eixo X
-  normalizedY: number = 0; // Normalização do eixo Y
-  normalizedZ: number = 0; // Normalização do eixo Z
+  normalizedX: number = 50; // Normalização do eixo X
+  normalizedY: number = 50; // Normalização do eixo Y
+  normalizedZ: number = 50; // Normalização do eixo Z
   private subscription!: Subscription;
 
   constructor(private deviceMotion: DeviceMotion) { }
@@ -26,7 +28,7 @@ export class LevelBubbleComponent implements OnInit, OnDestroy {
   }
 
   startMonitoring() {
-    this.subscription = this.deviceMotion.watchAcceleration().subscribe((data: DeviceMotionAccelerationData) => {
+    this.subscription = this.deviceMotion.watchAcceleration({frequency:100}).subscribe((data: DeviceMotionAccelerationData) => {
       // Usar a aceleração em Y para determinar o nível
       this.normalizedX = this.normalizeValue(data.x);
       this.normalizedY = this.normalizeValue(data.y);

@@ -1,6 +1,6 @@
 .level-bubble-container {
-  width: 200px; /* Largura do círculo */
-  height: 200px; /* Altura do círculo */
+  width: 300px; /* Largura do círculo */
+  height: 300px; /* Altura do círculo */
   border: 5px solid #ccc; /* Bordas do círculo */
   border-radius: 50%; /* Faz o círculo */
   position: relative;
@@ -10,9 +10,11 @@
 
 .level-bubble {
   position: absolute;
-  top: 50%; /* Posiciona o líquido na parte inferior */
-  right: 50%; /* Posiciona o líquido na parte inferior */
+  bottom: 50%; /* Posiciona o líquido na parte inferior */
+  left: 50%; /* Posiciona o líquido na parte inferior */
   width: 50px;
   height: 50px;
   background-color: #76c7c0; /* Cor do líquido */
+  border-radius: 50%; /* Faz o círculo */
+  transform: translate(-50%, 50%);
 }

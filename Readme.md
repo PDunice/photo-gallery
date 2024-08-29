@@ -1,3 +1,13 @@
+# Para mostrar o device manager do android studio em uma tela menos horrivel.
+
+se tiver com o projeto aberto
+
+- file > close project
+
+na tela inicial do android studio
+-  projeto > "..." ( no canto superior direito ) > device manager > start
+
+
 
 # para rodar local
 
